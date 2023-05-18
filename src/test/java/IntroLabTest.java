@@ -6,7 +6,7 @@
 
 import org.junit.*;
 
-import static org.junit.Assert.*;
+import static org.junit.
 
 public class IntroLabTest {
     @Before
@@ -30,4 +30,12 @@ public class IntroLabTest {
      *       the test results.
      * As a reference, we've included testExampleStudent above.
      */
+
+    @Test(timeout = 10)
+    public void testSarahHe() {
+        String expected = "Hello! My name is Sarah He! " +
+                "I like cats more than dogs! Welcome to CSC207";
+        String actual = IntroLab.hesarah3();
+        assertEquals(expected, actual);
+    }
 }
